@@ -1,9 +1,6 @@
 import { useState } from "react";
 
-export default function Stepper({
-  initial = 0,
-  onChange = (value: number) => {},
-}) {
+const Stepper = ({ initial = 0, onChange = (value: number) => {} }) => {
   const [count, setCount] = useState(initial);
 
   const handleIncrement = () => {
@@ -29,4 +26,5 @@ export default function Stepper({
       </button>
     </div>
   );
-}
+};
+export default Stepper;

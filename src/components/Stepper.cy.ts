@@ -2,6 +2,6 @@ import Stepper from "./Stepper";
 
 describe("<Stepper>", () => {
   it("mounts", () => {
-    cy.mount();
+    cy.mount(<Stepper />);
   });
 });
