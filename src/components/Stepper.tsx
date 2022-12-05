@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 
 const Stepper = ({ initial = 0, onChange = (value: number) => {} }) => {
   const [count, setCount] = useState(initial);
