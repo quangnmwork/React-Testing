@@ -1,18 +1,18 @@
-import { ReactNode, useState } from "react";
+import { ReactNode, useState } from 'react';
 
-const Stepper = ({ initial = 0, onChange = (value: number) => {} }) => {
+const Stepper = ({ initial = 0, onChange = (...args: any[]) => {} }) => {
   const [count, setCount] = useState(initial);
 
   const handleIncrement = () => {
     const newCount = count + 1;
     setCount(newCount);
-    onChange(newCount);
+    onChange(1);
   };
 
   const handleDecrement = () => {
     const newCount = count - 1;
     setCount(newCount);
-    onChange(newCount);
+    onChange(1);
   };
 
   return (
