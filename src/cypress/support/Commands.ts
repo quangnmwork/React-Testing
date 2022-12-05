@@ -1,8 +1,8 @@
-import { mount } from "cypress/react18";
-import { ReactElement, ReactNode } from "react";
+import { mount } from 'cypress/react18';
+import { ReactNode } from 'react';
 
-Cypress.Commands.add("mount", (component, options) => {
+Cypress.Commands.add('mount', (component: ReactNode, options) => {
   // Wrap any parent components needed
   // ie: return mount(<MyProvider>{component}</MyProvider>, options)
-  return mount(component as any, options);
+  return mount(component, options);
 });
