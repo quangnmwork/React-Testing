@@ -17,7 +17,11 @@ const Stepper = ({ initial = 0, onChange = (...args: any[]) => {} }) => {
 
   return (
     <div>
-      <button data-cy="decrement" onClick={handleDecrement}>
+      <button
+        data-cy="decrement"
+        className="bg-red-500"
+        onClick={handleDecrement}
+      >
         -
       </button>
       <span data-cy="counter">{count}</span>
